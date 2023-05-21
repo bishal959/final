@@ -65,7 +65,7 @@
     width: 20rem;
   }
   form > * {
-    padding: 10px;
+    padding: 100px;
     width: 100%;
     outline: 0;
     border: 0;
@@ -115,4 +115,6 @@
 .logout{
   background-color: red;
 }
+
+
   

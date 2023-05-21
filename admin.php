@@ -1,11 +1,11 @@
 <?php
 include "db_conn.php";
 session_start();
-if ($_SESSION['role'] !== 'admin') {
 
+$admin_id = $_SESSION['admin_id'];
 
-	// Redirect the user to a different page or display an error message
-	header('Location: html.php');
+if(!isset($admin_id)){
+   header('location: index.php');
 }
 
 ?>

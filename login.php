@@ -2,8 +2,6 @@
 session_start(); 
 include "db_conn.php";
 
-$_SESSION['role'] = $row['role'];
-
 if (isset($_POST['uname']) && isset($_POST['password'])) {
 
 	function validate($data){
@@ -29,25 +27,29 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_name'] = $row['user_name'];
-            	$_SESSION['name'] = $row['name'];
-            	$_SESSION['id'] = $row['id'];
-            	header("Location: html.php");
-				$_SESSION['role'] = $row['role'];
-		        exit();
-            }else{
-				header("Location: index.php?error=Incorect User name or password");
-		        exit();
+			if($row['role'] == 'admin'){
+
+				$_SESSION['admin_name'] = $row['name'];
+				$_SESSION['admin_id'] = $row['id'];
+				header('location:admin.php');
+	   
+			 }elseif($row['role'] == 'user'){
+	   
+				$_SESSION['user_name'] = $row['name'];
+				$_SESSION['user_id'] = $row['id'];
+				header('location: html.php');
+	   
+			 }elseif($row['role'] == 'teacher'){
+			$_SESSION['teacher_name'] = $row['name'];
+			$_SESSION['teacher_id'] = $row['id'];
+			header('location: teacher.php');
+
 			}
-		}else{
-			header("Location: index.php?error=Incorect User name or password");
-	        exit();
+	   
+		  }else{
+			 $message[] = 'incorrect email or password!';
+		  }
+       
 		}
 	}
-	
-}else{
-	header("Location: index.php");
-	exit();
-}
 ?>

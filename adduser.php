@@ -1,12 +1,13 @@
 <?php
 // add_user.php
 include "db_conn.php";
+
 session_start();
-if ($_SESSION['role'] !== 'admin') {
 
+$admin_id = $_SESSION['admin_id'];
 
-	// Redirect the user to a different page or display an error message
-	header('Location: html.php');
+if(!isset($admin_id)){
+   header('location: index.php');
 }
 
 
@@ -51,6 +52,7 @@ $conn->close();
     <option value="#">Please select a role</option>
     <option value="user">User</option>
     <option value="admin">Admin</option>
+    <option value="teacher">Teacher</option>
   </select><br><br>
   <input type="submit" value="Submit">
 </form>

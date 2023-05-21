@@ -42,4 +42,4 @@ setTimeout(function(){
  setTimeout(() => {
     Headers(location="html.php")
 }, 10); 
-   </script>
+</script>
