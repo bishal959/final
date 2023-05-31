@@ -2,7 +2,15 @@
 session_start();
 include("teacher_header.php");
 include "db_conn.php";
+$can_access_page = false;
+if(isset($_SESSION['admin_id'])  || isset($_SESSION['teacher_id'])){
+    $can_access_page = true;
+}
 
+if(!$can_access_page){
+    header('location: index.php');
+    exit();
+}
 $sql = "SELECT * FROM users WHERE role='user' ";
 $result = $conn->query($sql);
 

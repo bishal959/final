@@ -1,10 +1,13 @@
 <?php
-$sname= "10.121.8.4";
+
+$sname= "localhost";
 $unmae= "root";
-$password = "VZRssh87411";
+$password = "";
+
 $db_name = "wptest";
+
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
+
 if (!$conn) {
 	echo "Connection failed!";
 }
-?>

@@ -3,6 +3,15 @@
 include"db_conn.php";
 $sql = "SELECT user_name, subject, date, status FROM attendance";
 
+$can_access_page = false;
+if(isset($_SESSION['admin_id'])  || isset($_SESSION['teacher_id'])){
+    $can_access_page = true;
+}
+
+if(!$can_access_page){
+    header('location: index.php');
+    exit();
+}
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

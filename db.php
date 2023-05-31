@@ -1,7 +1,15 @@
 <?php
 include "db_conn.php";
 
+$can_access_page = false;
+if(isset($_SESSION['admin_id'])  || isset($_SESSION['teacher_id'])){
+    $can_access_page = true;
+}
 
+if(!$can_access_page){
+    header('location: index.php');
+    exit();
+}
 $subject = "Scripting Language"; // Specify the subject for which you want to display the attendance
 
 $sql = "SELECT user_name, date, status FROM attendance WHERE subject = '$subject'";

@@ -3,6 +3,15 @@ session_start();
 include "db_conn.php";
 include "teacher_header.php";
 
+$can_access_page = false;
+if(isset($_SESSION['admin_id'])  || isset($_SESSION['teacher_id'])){
+    $can_access_page = true;
+}
+
+if(!$can_access_page){
+    header('location: index.php');
+    exit();
+}
 
 $sql = "SELECT user_name, date, status FROM attendance ";
 $result = $conn->query($sql);
