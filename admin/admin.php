@@ -1,11 +1,11 @@
 <?php
-include "db_conn.php";
+include "../db_conn.php";
 session_start();
-
+include("adminheader.php");
 $admin_id = $_SESSION['admin_id'];
 
 if(!isset($admin_id)){
-   header('location: index.php');
+   header('location: ../index.php');
 }
 
 ?>
@@ -15,16 +15,8 @@ if(!isset($admin_id)){
 	<title>Admin Dashboard</title>
 </head>
 <body>
-	<link rel="stylesheet" href="style2.css">
-	<header class="header">
-  <a href="html.php"><h1>Attendance Management System</h1></a>
-<ul class="header-ul">
-<li><a href="adduser.php">ADD USER</a></li>
-<li><a href="edituser.php">EDIT USER</a></li>
-<li><a href="admin.php">Admin Dashboard</a></li>
-<li><a href="logout.php" class="logout">logout</a></li>
-</ul>
-</header>
+	
+
 
 	
 	<div>

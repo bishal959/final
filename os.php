@@ -3,8 +3,9 @@ session_start();
 include "db_conn.php";
 include "teacher_header.php";
 
+$subject = "Operating System"; // Specify the subject for which you want to display the attendance
 
-$sql = "SELECT user_name, date, status FROM attendance ";
+$sql = "SELECT user_name, date, status FROM attendance WHERE subject = '$subject'";
 $result = $conn->query($sql);
 
 // Create an empty array to store the attendance data
@@ -74,5 +75,3 @@ echo '</table>';
 $conn->close();
 
 ?>
-
-
