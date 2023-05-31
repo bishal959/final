@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start(); 
 include "db_conn.php";
 
@@ -48,6 +50,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	   
 		  }else{
 			 $message[] = 'incorrect email or password!';
+			 header("Location: index.php?error=Incorrect email or password");
 		  }
        
 		}
