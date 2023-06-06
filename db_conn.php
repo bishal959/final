@@ -1,6 +1,6 @@
 <?php
 
-$sname= " sql108.infinityfree.com";
+$sname= "sql108.infinityfree.com";
 $unmae= "epiz_34107324";
 $password = "bb7P9jJ0VpqzCv";
 
