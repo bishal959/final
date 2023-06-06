@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftpupload.net
-        username: epiz_34107324
-        password: ${{ epiz_34107324 }}  
+        username: 'epiz_34107324'
+        password: ${{ 'epiz_34107324' }}  
