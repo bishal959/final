@@ -7,7 +7,7 @@ echo '</pre>';
 if ($_SESSION['selectedSubject'] === "Operating System") {
     header('Location: os.php');
 }else if ($_SESSION['selectedSubject'] === "Numerical Methods") {
-    header('Location: nm.php');
+    header('Location: /subject/nm.php');
 }else if ($_SESSION['selectedSubject'] === "Database Management System") {
     header('Location: db.php');
 }else if ($_SESSION['selectedSubject'] === "Software Engineering") {
