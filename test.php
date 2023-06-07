@@ -56,7 +56,7 @@ include("teacher_header.php")
 
   <label>Subject</label>
   <input type="text" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly><br>
-
+  <label>Date</label>
   <input type="date" id="date" name="date" required readonly><br>
 
   <br>
