@@ -71,8 +71,6 @@ mysqli_close($conn);
          <input type="radio" name="r1" value="Present" >
          <label>Absent </label>
          <input type="radio" name="r1" value="Absent" checked >
-       
-
 <button type="submit">Submit</button>
 </form>
 </main>
