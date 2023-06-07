@@ -23,10 +23,11 @@ include("teacher_header.php")
 <head>
 <title>Attendance Management System</title>
 <!-- <link rel="stylesheet" href="form.css" /> -->
-  <link rel="icon" href="icon.png">
-<script src="https://kit.fontawesome.com/385a42cb55.js" crossorigin="anonymous" defer="">
-  <link rel="stylesheet" href="./sass/style.css">
-  </script>
+    <link rel="icon" href="icon.png">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/385a42cb55.js" crossorigin="anonymous" defer="">
+    <link rel="stylesheet" href="./sass/style.css">
+    </script>
 </head>
 <body>
 
