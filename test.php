@@ -55,10 +55,10 @@ include("teacher_header.php")
   </table>
 
   <label>Subject:
-  <input type="text" class="bg-black" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly>
+  <input type="text" class="text-neutral-500" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly>
   </label>
   <label>Date:
-  <input type="date" class="bg-black" id="date" name="date" required readonly>
+  <input type="date" class="text-neutral-500" id="date" name="date" required readonly>
   </label>
   <button type="submit" class="">Submit</button>
 </form>
