@@ -60,6 +60,7 @@ include("teacher_header.php")
   <label>Date:
   <input type="date" class="text-black mt-1 block  px-1 py-2 bg-white border border-slate-50 rounded-md text-sm shadow-sm placeholder-slate-100" id="date" name="date" required readonly>
   </label>
+  <div class="p-8 ...">p-8</div>
   <button type="submit" class="rounded-full  p-5 ... border-white text-white">Submit</button>
 </form>
 
