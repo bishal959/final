@@ -61,7 +61,7 @@ include("teacher_header.php")
    
 mysqli_close($conn);
 ?>
-   <form method="post" action="attendance.php">
+   
    <label>Subject</label>
       <input type="text" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly >
       <label>Date</label>
