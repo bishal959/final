@@ -60,7 +60,7 @@ include("teacher_header.php")
   <label>Date:
   <input type="date" class="text-neutral-500" id="date" name="date" required readonly>
   </label>
-  <button type="submit" class="">Submit</button>
+  <button type="submit" class="padding-5px">Submit</button>
 </form>
 
 </main>
