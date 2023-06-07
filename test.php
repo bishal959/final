@@ -26,7 +26,6 @@ include("teacher_header.php")
     <link rel="icon" href="icon.png">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/385a42cb55.js" crossorigin="anonymous" defer="">
-    <link rel="stylesheet" href="./sass/style.css">
     </script>
 </head>
 <body>
