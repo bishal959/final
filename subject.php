@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <option  value="Numerical Methods">Numerical Methods</option>
         <option  value="Database Management System">Database Management System</option>
         <option  value="Software Engineering">Software Engineering</option>
-        <option  value="Scripting Language"> Scripting Language</option>
+        <option  value="Scripting Language">Scripting Language</option>
       </select>
       <button type="submit">Submit</button>
 </form>
