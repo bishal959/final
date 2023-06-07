@@ -31,7 +31,7 @@ include("teacher_header.php")
 <body>
 
 <main>
-<h2 class="align-centre">Attendance Form</h2>
+<h2 class="container mx-auto">Attendance Form</h2>
 <form method="POST" action="atenpost.php" class="container mx-auto">
   <table>
     <tr>
