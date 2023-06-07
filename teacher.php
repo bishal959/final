@@ -63,7 +63,8 @@ mysqli_close($conn);
 ?>
    <form method="post" action="attendance.php">
    <label>Subject</label>
-      <input type="text" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly ><br>
+      <input type="text" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly >
+      <label>Date</label>
         <!-- <input type="date" id="myDateInput" name="date"min="<?php echo date('Y-m-d'); ?>" max="<?php echo date('Y-m-d'); ?>" required > -->
         <input type="date" id="date" name="date" required readonly><br>
          <label>Present</label>
