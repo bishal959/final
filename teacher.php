@@ -40,6 +40,7 @@ include("teacher_header.php")
 <!-- <link rel="stylesheet" href="form.css" /> -->
   <link rel="icon" href="icon.png">
 <script src="https://kit.fontawesome.com/385a42cb55.js" crossorigin="anonymous" defer="">
+  <link rel="stylesheet" href="./sass/style.css">
   </script>
 </head>
 <body>
