@@ -55,7 +55,7 @@ include("teacher_header.php")
   </table>
 
   <label>Subject:
-  <input type="text" class="text-black mt-1 block w-32px px-3 py-2 bg-white border border-slate-50 rounded-md text-sm shadow-sm placeholder-slate-100" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly>
+  <input type="text" class="text-black mt-1 block w-1/5 px-3 py-2 bg-white border border-slate-50 rounded-md text-sm shadow-sm placeholder-slate-100" name="subject" value="<?php echo $_SESSION['selectedSubject']; ?>" readonly>
   </label>
   <label>Date:
   <input type="date" class="text-black mt-1 block  px-1 py-2 bg-white border border-slate-50 rounded-md text-sm shadow-sm placeholder-slate-100" id="date" name="date" required readonly>
