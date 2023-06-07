@@ -44,8 +44,8 @@ include("teacher_header.php")
       echo "<tr>";
       echo "<td>" . $row["user_name"] . "</td>";
       echo "<td>";
-      echo "<label><input type='radio' name='attendance_status[" . $row["user_name"] . "]' value='Present' checked> Present</label>";
-      echo "<label><input type='radio' name='attendance_status[" . $row["user_name"] . "]' value='Absent'> Absent</label>";
+      echo "<label><input type='radio' name='attendance_status[" . $row["user_name"] . "]' value='Present' > Present</label>";
+      echo "<label><input type='radio' name='attendance_status[" . $row["user_name"] . "]' value='Absent'checked> Absent</label>";
       echo "</td>";
       echo "</tr>";
     }
