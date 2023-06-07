@@ -32,7 +32,7 @@ include("teacher_header.php")
 
 <main>
 <h2 class="align-centre">Attendance Form</h2>
-<form method="POST" action="attendance.php" class="container mx-auto">
+<form method="POST" action="atenpost.php" class="container mx-auto">
   <table>
     <tr>
       <th>User Name</th>
