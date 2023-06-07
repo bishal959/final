@@ -31,19 +31,22 @@ include("teacher_header.php")
 <body>
 
 <main>
-<h2>Attendance Form</h2>
+<h2 class="align-centre">Attendance Form</h2>
 <form method="POST" action="attendance.php">
   <table>
     <tr>
-      <th>Select</th>
       <th>User Name</th>
+      <th>Attendance</th>
     </tr>
     <?php
-    // Populate the table with user names
+    // Populate the table with user names and attendance inputs
     while ($row = mysqli_fetch_assoc($result)) {
       echo "<tr>";
-      echo "<td><input type='checkbox' name='user_name[]' value='" . $row["user_name"] . "'></td>";
       echo "<td>" . $row["user_name"] . "</td>";
+      echo "<td>";
+      echo "<label><input type='radio' name='attendance_status[" . $row["user_name"] . "]' value='Present' checked> Present</label>";
+      echo "<label><input type='radio' name='attendance_status[" . $row["user_name"] . "]' value='Absent'> Absent</label>";
+      echo "</td>";
       echo "</tr>";
     }
 
@@ -57,11 +60,6 @@ include("teacher_header.php")
   <input type="date" id="date" name="date" required readonly><br>
 
   <br>
-  <label>Attendance</label>
-  <input type="radio" name="attendance_status" value="Present" checked>
-  <label>Absent</label>
-  <input type="radio" name="attendance_status" value="Absent">
-
   <button type="submit">Submit</button>
 </form>
 
