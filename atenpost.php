@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Redirect to a success page or perform additional actions
-        header('location: teacher.php');
+        header('location: test.php');
         exit();
     }
 }
