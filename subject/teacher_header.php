@@ -5,7 +5,7 @@
 ?>
 <html>
     <head>
-        <link rel="stylesheet" href="./sass/header.css">
+        <link rel="stylesheet" href="../sass/header.scss">
     </head>
     <body>
         <header class="header">
