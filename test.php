@@ -45,7 +45,6 @@ include("teacher_header.php")
       echo "<td>" . $row["user_name"] . "</td>";
       echo "<td>";
       echo "<label><input type='radio' name='status[" . $row["user_name"] . "]' value='Present' > Present</label>";
-      echo "<div class="p-1 ..."></div>"
       echo "<label><input type='radio' name='status[" . $row["user_name"] . "]' value='Absent'checked> Absent</label>";
       echo "</td>";
       echo "</tr>";
@@ -53,6 +52,7 @@ include("teacher_header.php")
 
     mysqli_close($conn);
     ?>
+    <div class="p-1 ..."></div>
   </table>
 
   <label>Subject:
