@@ -1,12 +1,6 @@
 <?php
-include "../db_conn.php";
-session_start();
-include("adminheader.php");
-$admin_id = $_SESSION['admin_id'];
 
-if(!isset($admin_id)){
-   header('location: ../index.php');
-}
+include("adminheader.php");
 
 ?>
 <!DOCTYPE html>

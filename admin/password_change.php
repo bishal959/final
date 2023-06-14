@@ -1,8 +1,6 @@
 <?php
 
-session_start();
-
-include "../db_conn.php";
+include("adminheader.php");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $current_password = $_POST['current_password'];
