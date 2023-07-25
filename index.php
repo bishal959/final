@@ -1,3 +1,17 @@
+<?php
+session_start();
+if (isset($_SESSION['admin_name']) && isset($_SESSION['admin_id'])) {
+    header('Location: /admin/admin.php');
+    exit();
+} elseif (isset($_SESSION['user_name']) && isset($_SESSION['user_id'])) {
+    header('Location: html.php');
+    exit();
+} elseif (isset($_SESSION['teacher_name']) && isset($_SESSION['teacher_id'])) {
+    header('Location: subject.php');
+    exit();
+}
+	
+?>
 <!DOCTYPE html>
 <html>
 <head>
