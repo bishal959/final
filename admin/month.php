@@ -11,7 +11,7 @@ $attendanceData = array();
 // Check if there are any rows returned from the query
 if ($result->num_rows > 0) {
     // Loop through each row of the result set
-    while ($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) { 
         // Create a new associative array for each attendance record
         $attendanceRecord = array(
             'user_name' => $row['user_name'],
