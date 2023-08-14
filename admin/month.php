@@ -6,7 +6,7 @@ $sql = "SELECT user_name, date, status FROM attendance ";
 $result = $conn->query($sql);
 
 // Create an empty array to store the attendance data
-$attendanceData = array();
+$attendanceData = array(); 
 
 // Check if there are any rows returned from the query
 if ($result->num_rows > 0) {
