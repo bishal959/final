@@ -1,14 +1,21 @@
 <?php
+// Read the .env file into an array
+$envFile = __DIR__ . '/.env';
+$envVariables = parse_ini_file($envFile);
 
-$sname= "sql108.infinityfree.com";
-$unmae= "epiz_34107324";
-$password = "bb7P9jJ0VpqzCv";
+// Database configuration
+$host = $envVariables['DB_HOST'];
+$user = $envVariables['DB_USER'];
+$password = $envVariables['DB_PASSWORD'];
+$database = $envVariables['DB_NAME'];
 
-$db_name = "epiz_34107324_wptest";
+// Create a database connection
+$conn = new mysqli($host, $user, $password, $database);
 
-$conn = mysqli_connect($sname, $unmae, $password, $db_name);
-
-if (!$conn) {
-	echo "Connection failed!";
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+// ... Rest of your code ...
 ?>
