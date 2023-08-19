@@ -14,4 +14,4 @@ jobs:
         server: ${{ secrets.P_SERVER }}  
         username: ${{ secrets.P_USER}}  
         password: ${{ secrets.P_PASSWORD }}  
-        server-dir: /home/container/webroot/
+        server-dir: /webroot/
