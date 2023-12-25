@@ -25,7 +25,7 @@ $curl = curl_init();
 
     ',
     CURLOPT_HTTPHEADER => array(
-        'Authorization: key live_secret_key_44ab453138194d52a9db8b4908a224dd',
+        'Authorization: key test_secret_key_9a88bf2777534ec78a3dc5954816128e',
         'Content-Type: application/json',
     ),
     ));
