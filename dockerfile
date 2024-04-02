@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 RUN a2enmod rewrite
 
 # Set the document root of the web server to your application's public directory
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+ENV APACHE_DOCUMENT_ROOT /var/www/html/
 
 # Copy your application code into the container
 COPY . $APACHE_DOCUMENT_ROOT
