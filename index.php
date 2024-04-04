@@ -29,7 +29,7 @@ if (isset($_SESSION['admin_name']) && isset($_SESSION['admin_id'])) {
      	<input type="text" name="uname" placeholder="User Name"><br>
      	<label>password</label>
      	<input type="password" name="password" placeholder="Password"><br>
-
+	<input type="password" name="password" placeholder="Password"><br>
      	<button type="submit">Login</button>
      </form>
 </body>
